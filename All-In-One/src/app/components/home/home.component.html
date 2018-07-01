@@ -1,0 +1,15 @@
+<div class="container mt-3 mb-3 text-center">
+  <h1 class="display-4">Welcome To My App Mr. {{name}}</h1>
+  <hr>
+<div class="row">
+  <div class="col-md-4 offset-md-4" *ngIf="!isDone">
+    <label>Enter Your Name Here:</label>
+      <input type="text" #nameHere class="form-control" [(ngModel)]=name (keyup.enter)="changeName(nameHere.value)">
+      <br>
+      <button class="btn btn-success" (click)="changeName(nameHere.value)">Done</button>
+  </div>
+  <div class="col-8 offset-2 bg-success" *ngIf="isDone" style="border-radius: 25px; color: white; background: linear-gradient(rgba(226, 214, 214, 0.1),rgba(247, 236, 236, 0.1))">
+    <h1 class="display-3">Thanks For Your Input..!</h1>
+  </div>
+</div>
+</div>

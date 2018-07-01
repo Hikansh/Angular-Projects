@@ -1,0 +1,16 @@
+<div class="container">
+<h1>Users</h1>
+<ul [@userAnimation]='users'>
+  <li *ngFor="let user of users">
+    <a routerLink="/details/{{user.id}}"><strong>{{user.name}}</strong></a>
+    <ul>
+      <li>
+        {{user.email}}
+      </li>
+      <li>
+        <a href="http://{{user.website}}">{{user.website}}</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>

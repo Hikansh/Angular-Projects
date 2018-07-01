@@ -1,0 +1,26 @@
+ul {
+    li{
+    list-style: none;
+    background: rgb(248, 245, 241);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    
+    a{
+        font-size: 2rem;
+    }
+    ul{
+        li{
+            font-size: 1.2rem;
+            //padding: -150px;
+            margin: -20px;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+}
+.container{
+    margin-top: 20px;
+}

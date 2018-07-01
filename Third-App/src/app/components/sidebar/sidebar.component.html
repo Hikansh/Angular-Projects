@@ -1,0 +1,15 @@
+
+<nav>
+  <ul>
+    <li>
+      <a routerLink="" [class.activated]="currentUrl=='/'">  <!--This is class binding in agular js-->
+          <i class="fas fa-users fa-2x"></i>
+      </a>
+    </li>
+    <li>
+        <a routerLink="posts" [class.activated]="currentUrl=='/posts'">
+            <i class="fas fa-comments fa-2x"></i>
+        </a>
+      </li>
+  </ul>
+</nav>
