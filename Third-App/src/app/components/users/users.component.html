@@ -1,7 +1,7 @@
 <div class="container">
 <h1>Users</h1>
 <ul [@userAnimation]='users'>
-  <li *ngFor="let user of users">
+  <li *ngFor="let user of users | paginate : { itemsPerPage:3,currentPage: p }">
     <a routerLink="/details/{{user.id}}"><strong>{{user.name}}</strong></a>
     <ul>
       <li>
@@ -14,3 +14,4 @@
   </li>
 </ul>
 </div>
+<pagination-controls (pageChange)="p = $event" ></pagination-controls>

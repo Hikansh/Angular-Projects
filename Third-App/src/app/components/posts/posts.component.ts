@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../data.service';
 import { Observable } from 'rxjs';
 import { trigger,style,animate,query,keyframes,stagger,transition } from '@angular/animations';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @Component({
